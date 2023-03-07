@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Prework Study Guide</title>
   </head>
   <body>
@@ -58,7 +59,34 @@
         <section class="card" id="css-section">
           <h2>CSS</h2>
           <ul>
-            <li> My CSS notes will go here</li>
+            <li> Used to define how webpage content is presented to users</li>
+            <li>Defines colors, aesthetics, visual layout, and organization</li>
+            <li>Three types of styles: Inline, internal, external</li>
+            <li>Inline CSS are used when a developer wants to style an element directly in the HTML file</li>
+            <li>Inline styles apply to a specific HTML tag, using a style attribute with a CSS rule to style a particular page element only; useful for quick and permanent changes but not as flexible as external and internal style sheets (must be edited individually)</li>
+            <li>Inline CSS- style attribute to change color of h1 heading</li>
+            <li>Internal style sheet can be embedded directly into the HTML file, contains CSS rules for the webpage, rules only apply to that one page, and you can configure CSS classes and IDs to identify elements and style multiple elements in the page code</li>
+            <li>A single change to the CSS rule will apply to all tagged page elements </li>
+            <li>External CSS style sheet is most common way to style a website</li>
+            <li>External CSS style sheets allows developers to keep all CSS rules in a separate file which makes design changes easier</li>
+            <li>When using external style sheet, the file is linked using a link element placed in the HTMLs head (header)</li>
+            <li>CSS Rule: selector defines the element or attributes to which the declarations apply</li>
+            <li>Declarations contain two important components: CSS property we want to apply and the value of the property</li>
+            <li>Example: the declaration color: blue; includes the CSS property color and the value of that property, blue</li>
+            <li>Margin property indicates how much space we want around the outside of an element, not visible on page, adds a buffer, margin and 0 means no extra space</li>
+            <li>Padding property adds space around the content inside an element, increasing padding makes the entire element bigger because it is located inside an element </li>
+            <li>CSS box model: margins outside the element, elements borders, padding, and content </li>
+            <li>Asterisk will apply a rule to all elements visible on page</li>
+            <li>DRY (do not repeat yourself) Code is a principle that encourages developers to reuse or share pieces of code in order to reduce the number of lines that need to be written or maintained: example is header, footer selectors with same declaration</li>
+            <li>Text align is a position property, can center a title or heading on a webpage </li>
+            <li>CSS rules can be applied to images as well, img selector assigns property values to any image element in the markup</li>
+            <li>Display property is assigned with the block value, which assigns each image to start on a new line</li>
+            <li>Link is needed to connect stylesheet to HTML, place it after final meta element in head, and before title element</li>
+            <li>The Rel attribute in the link specifies the relationship between the current document and the linked document resource</li>
+            <li>The href attribute specifies the URL of the external resource, it is using a relative path which means the location is derived from the current location, and to locate the style sheet from the current location of index.html we need to look in assets folder</li>
+            <li>Class attributes allow you to share a CSS rule to any element of choice by assigning the rule to a class attribute with a class selector; CA can be assigned to element in HTML and we can freely choose which elements are assigned the CSS rule</li>
+            <li>Adding a period before the card selector designates card as a class selector, any HTML element assigned to class card will gain these properties</li>
+            <li>HTML has color codes you can assign in CSS either by using semantic references or a hex # or hexademical code that is on HTML color codes website</li>
           </ul>
           </section>
           <section class="card" id="git-section">
@@ -68,7 +96,7 @@
             </ul>
             </section>
             <section class="card" id="javascript-section">
-              <h2>Javascript</h2>
+              <h2>JavaScript</h2>
               <ul>
                 <li>My JavaScript notes will go here</li>
               </ul>
