@@ -93,13 +93,83 @@
           <section class="card" id="git-section">
             <h2>Git</h2>
             <ul>
-              <li>My Git notes will go here</li>
+              <li>git status shows modified files in working directory, it stages it for your next commit </li>
+              <li>git add (file) adds a file as it looks now to the next commit stage</li>
+              <li>git reset (file) unstages a file while retaining the changes in working directory</li>
+              <li>git commit -m (descriptive message) commits the staged content as a new commit snapshot</li>
+              <li>git branch (branch name) creates a new branch at the current commit</li>
+              <li>git checkout switches to another branch and checks it out into the working directory</li>
+              <li>git merge (branch) merges the specified branch's history into the current one</li>
+              <li>git log shows all the commites in the current branch's history</li>
+              <li>More detailed git notes in Git Cheat Sheet Bookmark</li>
             </ul>
             </section>
             <section class="card" id="javascript-section">
               <h2>JavaScript</h2>
               <ul>
-                <li>My JavaScript notes will go here</li>
+                <li>A variable is a named container that allows us to store data in our code</li>
+                <li>In JS, to declare a variable we use the var keyword</li>
+                <li>After the var keyword, we give the variable a name</li>
+                <li>This name must be unique because it is how we will reference the info stored in the variable in our code </li>
+                <li>We use an assignment operator, =, to assign the specific data that we want stored in our variable, like var shape = circle, with circle in quotes</li>
+                <li>All strings are surrounded by quotation marks, and each line of JS code ends with a semicolon</li>
+                <li>console.log() method is used to output a message to the web console by adding an argument </li>
+                <li>In the prework study guide, console log outputs the value of topics because we have added it as an argument inside the parantheses</li>
+                <li>The world console refers to a test environment that developers use to check out their code</li>
+                <li>The second part, is a method which is a set of instructions that can be executed by a computer and will output whatever we add inside the paraantheses to the console</li>
+                <li>JS files are linked within the body element, after the footer</li>
+                <li>Chrome Dev Tools allow you to see the console, by right clicking on the page and then choosing inspect, then console, which allows us to see the console log method in action that helps developers test and debug code</li>
+                <li>Control flow is the order in which a computer executes code in a script</li>
+                <li>In JS, code runs from the first statement at the top of the page down to the last statement at the bottom of the page</li>
+                <li>For example, the topics must be defined before we tell our computer how to log them</li>
+                <li>Control flow can be interrupted, using conditional statements and loops can let us alter control flow</li>
+                <li>Conditional if statements are a a way of introducing decision making into our code</li>
+                <li>The code will only execute if the statement meets a condition, or if it is true</li>
+                <li>When a computer encounters an if statement in a JS file, it will check to see if the condition we provide is truthy</li>
+                <li>If the condition is truthy, the action in between the curly bracakets will be completed</li>
+                <li>If the condition has a value that is not truthy, then the computer will ignore whatever is in between the curly brackets and move on</li>
+                <li>A value is falsy if it is: 0, -0, On, "", null, undefined, NotaNumber, or a Boolean data type with a value of false</li>
+                <li>A value is truthy if it is any other value, or a Boolean data type with the value of true</li>
+                <li>A conditional else if statement means that the computer will continue through all conditions we provide, and evaluate whether or not a condition is truthy</li>
+                <li>Once it finds that a condition is truthy, it will run the code in the curly brackets associated with that condition, and then break out of the if statement</li>
+                <li>=== is the strict equality operator and checks to see if the two values are equal, and returns a Boolean result true if the values are equal, and false if the calues are not equal</li>
+                <li>An array is a single variable that is used to hold a group of data, typically used to hold data that is related in some way</li>
+                <li>To create an array, we declare a variable in the same way that we declared a variable with only one data item</li>
+                <li>We use var, then give the variable a naame, and assign the variable to a group of values</li>
+                <li>Arrays are useful when we want to perform a task on multiple pieces of data at once</li>
+                <li>A single array can store different types of data, like strings or numbers so on and so forth</li>
+                <li>To work with individual items inside an array, we need to have the location of the data item in the array, and this location is identified with a unique number called an index</li>
+                <li>Arrays are zero-indexed and sequential which means the first item is 0, not 1</li>
+                <li>The indices, or location identifiers, are always whole numbers which increase by 1</li>
+                <li>There are several types of loops</li>
+                <li>Forloops use the predictable pattern of indices to perform a task on all the items in an array by allowing a single code block to be executed over and over</li>
+                <li>Another statement, such as the conditional if statement, interrupts the control flow by executing a block of code a specific number of times </li>
+                <li>Using a forloop, the computer will go through each of the items in our array and log them into the console until there are none left</li>
+                <li>We need the index and the array's length to do so</li>
+                <li>The array length is important because the forloop needs to know how many times the code will run until there are no items left in the array</li>
+                <li>You can find the length of an array by using a built-in property of an array, called the length</li>
+                <li>There are three important statements in a forloop as listed below</li>
+                <li>THe first statement determines the starting point for our loop, so if we want it to start at the beginning of the array, we declare a variable and give it the value of 0 </li>
+                <li>The second statement is the condition, as long as the number in the variable is less than the length of the array, the loop will keep running which allows the loop to execute one time for each item in the array, and we use the length property on the array to express that condition</li>
+                <li>The final statement is what allows the array to iterate over each item</li>
+                <li>Since indices follow a predictable pattern, we know the number increases by 1 each time. The code x++ is a shortcut way of writing x+1, now whenever the code loops, x will increase by 1 as shown in the following line of code</li>
+                <li>A forloop starts with for, then the code we want to be executed for each loop goes inside of the curly brackets</li>
+                <li>A function, at the most basic level, is simply a set of instructions that tells the computer how to perform a certain task</li>
+                <li>A function is different than a forloop or conditional statement because they do not automatically execute when a JS file is run</li>
+                <li>A function must be called by name to execute, and it makes the code more easily reusable because you can call it as many times as you need</li>
+                <li>Being able to call a function also means you have control where in the control flow a task is executed, or if it is executed at all</li>
+                <li>Essentially, a function groups a set of instructions</li>
+                <li>The first part of a function is defining the function</li>
+                <li>Function declaration uses the function keyword to define the function</li>
+                <li>The code block, or function body, is where we write out instructions for what the function will do and it is inside curly brackets</li>
+                <li>The second part of a function is calling the function</li>
+                <li>To call the function, the function name first must be followed by parantheses</li>
+                <li>To call the function name, write the function name () where you want it to be called in the code and we will see the instructions put out</li>
+                <li>Example of a function in Google Docs notes </li>
+                <li>When we want to randomize selection from the array, we need to use a Math function that helps us select a random number</li>
+                <li>this function is Math.random() and Math.floor() and is placed after our variable name</li>
+                <li>Remember, an array must be defined before we do our functions</li>
+                <li>More detailed JS notes from articles are in Google Docs</li>
               </ul>
               </section>    
       </section>
